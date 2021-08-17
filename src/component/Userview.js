@@ -31,8 +31,8 @@ export default function Userview(props) {
                         <h5 className="my-4">FullName: {details.name}</h5>
                         <h5 className="my-4">Email: {details.email}</h5>
                         <h5 className="my-4">Website: {details.website}</h5>
-                        <h5 className="my-2">Detail Of the Company:</h5>
-                        {/* <h6>Company Name: {details.company.name}</h6>
+                        {/* <h5 className="my-2">Detail Of the Company:</h5>
+                        <h6>Company Name: {details.company.name}</h6>
                         <h6>CatchPhrase: {details.company.catchPhrase}</h6>
                         <h6>Service: {details.company.bs}</h6> */}
                     </div>
