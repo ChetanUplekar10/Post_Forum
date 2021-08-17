@@ -6,6 +6,7 @@ import Listview from './Listview';
 
 export default function Individualview(props) {
     const {id} = props.match.params
+    console.log(props)
     const[details, setDetail] = useState([])
     console.log(id)
     useEffect(()=>{
@@ -28,16 +29,18 @@ export default function Individualview(props) {
                 <Link style={{textDecoration:'none', color:'#000'}} to='/'><h1>&#8592;</h1></Link>
             </div>
             <div>
+            <div className="row justify-content-center">
                 {details.map((comments)=>{
                     return(
-                        <div className="row card mt-3 p-3">
-                            <h6>Name: {comments.name}</h6>
-                            <h6>Email: {comments.email}</h6>
-                            <h6>comment: {comments.body}</h6>
-                        </div>
+                            <div className="col col-5 card p-3 my-3 mx-2">
+                                <h6>Name: {comments.name}</h6>
+                                <h6>Email: {comments.email}</h6>
+                                <h6>comment: {comments.body}</h6>
+                            </div>
                     )
                 }
                 )} 
+                </div>
             </div>
         </div>
     )
